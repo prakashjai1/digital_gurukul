@@ -1,19 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-// const color = {
-//   primaryColor: "#6366F1",
-//   secondaryColor: "#8B5CF6",
-//   mainBackground: "#FFFFFF",
-//   sectionBackground: "#F9FAFB",
-//   cardBackground: "#FFFFFF",
-//   heading: "#1E1B4B",
-//   paragraph: "#4B5563",
-//   smallText: "#6B7280",
-//   onHover: "#4F46E5",
-//   menuHover: "#4338CA",
-// };
-
 const benefits = [
   {
     title: "Digital Learning",
@@ -51,17 +38,17 @@ const Home = () => {
   return (
     <>
       <div>
-        <header className="grid md:grid-cols-2 md:p-24 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate_animated animate_fadeIn ">
-          <div>
+        <header className="grid gap-10 p-10 justify-items-center md:grid-cols-2 md:p-24 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate_animated animate_fadeIn ">
+          <div className="flex justify-center items-center">
             <img
               src="./images/Faculty.png"
               alt=""
               className="w-3/5 rounded-full animate__animated animate__backInDown animate_delay-10s border border-solid object-cover"
             />
           </div>
-          <div className="flex flex-col gap-6 justify-center animate__animated animate__backInDown animate_delay-10s">
+          <div className="flex flex-col gap-6 justify-center items-center animate__animated animate__backInDown animate_delay-10s">
             <h1 className="text-6xl font-[700] text-white">Say Hello !</h1>
-            <p className="text-2xl text-gray">
+            <p className="text-2xl text-gray text-center">
               Enjoy a complete digital learning experience that makes education
               smarter, simpler, and more engaging.
             </p>
@@ -99,7 +86,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="p-24 grid grid-cols-2 gap-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="p-24 grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
           <div className="">
             <Swiper className="mySwiper rounded-lg">
               <SwiperSlide>

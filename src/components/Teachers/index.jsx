@@ -56,19 +56,11 @@ const Teachers = () => {
       </header>
 
       <section
-        style={{
-          width: "80%",
-          margin: "0 auto",
-          padding: "80px 0",
-          display: "flex",
-          flexWrap: "wrap",
-          columnGap: "2rem",
-          rowGap: "1.8rem",
-        }}
+        className="md:w-[80%] mx-auto py-[80px] md:flex md:flex-wrap md:gap-5 grid sm:grid-cols-2 grid-cols-1 gap-10 text-center w-[90%]"
       >
         {teacher.map((item, index) => {
           return (
-            <div style={{ width: "22%" }} key={index}>
+            <div className="md:w-[22%] shadow-lg p-2" key={index}>
               <img src={item.image} alt="" width="100%" />
               <h2 style={{ padding: "0", margin: "0", fontSize: "1.6rem" }}>
                 {item.name}

@@ -8,6 +8,7 @@ import Holidays from './components/Holidays'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 
  
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

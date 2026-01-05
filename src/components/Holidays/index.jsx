@@ -25,12 +25,8 @@ const Holidays = () => {
   return (
     <>
       <div
-        className="container"
-        style={{
-          width: "60%",
-          margin: "0 auto",
-          paddingBlock: "2rem",
-        }}
+      
+        className="container md:w-[60%] sm:w-[90%] sm:mx-auto w-full py-[2rem]"
       >
         <h1 style={{ textAlign: "center" }}>Your Holiday`s</h1>
 

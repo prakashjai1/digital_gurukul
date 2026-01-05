@@ -18,21 +18,10 @@ const Contact = () => {
 
     return (
         <>
-            <div className="container" style={{
-                display: 'flex',
-                padding: '40px 0',
-                width: '90%',
-                margin: '0 auto'
-            }}>
-                <img src="./images/contact.svg" alt="" style={{
-                    width: '45%'
-                }}/>
-                <div style={{width:'45%'}}>
-                    <form onSubmit={ dataStore} style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '20px'
-                    }}>
+            <div className="container flex md:flex-row md:py-[40px] w-[90%] mx-auto flex-col items-center gap-20 py-[2rem]">
+                <img src="./images/contact.svg" className='md:w-[45%] w-[90%]' alt=""/>
+                <div className='md:w-[45%] w-[90%]'>
+                    <form onSubmit={ dataStore} className='flex flex-col gap-[20px]'>
                         <div>
                             <label htmlFor="name" style={{fontSize:'1.5rem', fontWeight:'500', display:'block', marginBlock: '0 .5rem'}}>Fullname</label>
                             <input onChange={(e)=>setFullName(e.target.value)} type="text" id="name" name="name" placeholder="Enter name here" required
@@ -69,22 +58,13 @@ const Contact = () => {
                                     width:'100%',
                                     paddingBlock: '1rem',
                                     paddingInline: '.5rem 0',
+                                    border: '1px solid gray',
                                 }} 
                             >
                             </textarea>
                         </div>
                         <button 
-                            style={{
-                                width: '25%',
-                                padding: '.7rem  0rem',
-                                borderRadius: '.3rem',
-                                border: 'none',
-                                backgroundColor: '#6C63FF',
-                                color: 'white',
-                                fontSize: '1.5rem',
-                                fontWeight: '700',
-                                cursor: 'pointer'
-                            }}
+                            className='md:w-[25%] py-[.7rem] rounded-[.3rem] border-none bg-[#6C63FF] text-white text-[1.5rem] font-[700] cursor-pointer'
                         >
                             Submit
                         </button>
