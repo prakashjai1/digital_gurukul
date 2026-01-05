@@ -67,7 +67,7 @@ const Footer = () => {
                     gap: 15
                 }}>
                     <li>
-                        <Link to="/https://www.youtube.com/@kanhaagamingradhekrishna8770/shorts" style={{
+                        <Link to="/" style={{
                             color: "white",
                             textDecoration: "none"
                         }}>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/https://www.linkedin.com/in/kanhaiya-yadav-3664272a3/" style={{
+                        <Link to="/" style={{
                             color: "white",
                             textDecoration: "none"
                         }}>
@@ -85,7 +85,7 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/__.kanhaa.__" style={{
+                        <Link to="/" style={{
                             color: "white",
                             textDecoration: "none"
                         }}>
@@ -93,7 +93,7 @@ const Footer = () => {
                             Instagram</Link>
                     </li>
                     <li>
-                        <Link to="/https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-homepage" style={{
+                        <Link to="/" style={{
                             color: "white",
                             textDecoration: "none"
                         }}>
@@ -169,4 +169,5 @@ const Footer = () => {
 
     )
 }
+
 export default Footer;
