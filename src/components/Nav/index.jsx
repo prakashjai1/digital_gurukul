@@ -42,8 +42,9 @@ const Nav = () => {
         style={{
           display: "flex",
           alignItems: "center",
+          // paddingInline: "2.3rem",
           justifyContent: "space-between",
-          paddingInline: "2.3rem",
+          
           boxShadow: "0 4px 4px 0 rgba(0,0,0, 0.4)",
         }}
       >

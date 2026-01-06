@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <header className="grid gap-10 p-10 justify-items-center md:grid-cols-2 md:p-24 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate_animated animate_fadeIn ">
+        <header className="grid gap-10 px-2 py-8 sm:p-10 justify-items-center  md:grid-cols-2 md:p-24 bg-gradient-to-l md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% animate_animated animate_fadeIn ">
           <div className="flex justify-center items-center">
             <img
               src="./images/Faculty.png"
@@ -47,16 +47,16 @@ const Home = () => {
             />
           </div>
           <div className="flex flex-col gap-6 justify-center items-center animate__animated animate__backInDown animate_delay-10s">
-            <h1 className="text-6xl font-[700] text-white">Say Hello !</h1>
-            <p className="text-2xl text-gray text-center">
+            <h1 className="text-4xl sm:text-6xl font-[700] text-white">Say Hello !</h1>
+            <p className=" px-5 text-1xl sm:text-2xl text-gray text-center">
               Enjoy a complete digital learning experience that makes education
               smarter, simpler, and more engaging.
             </p>
             <div className="flex gap-5">
-              <button className="py-[.7rem] px-[2rem] text-md text-white font-[500]  rounded-[5px] bg-[#596DF0] hover:bg-[crimson]">
+              <button className="p-[.8rem] sm:py-[.7rem] sm:px-[2rem] text-md text-white font-[500]  rounded-[5px] bg-[#596DF0] hover:bg-[crimson]">
                 Learn More
               </button>
-              <button className="py-[.7rem] px-[2rem] text-md text-black font-[500] rounded-[5px] bg-[transtparent] border border-black ">
+              <button className="p-[.8rem] sm:py-[.7rem] sm:px-[2rem] text-md text-black font-[500] rounded-[5px] bg-[transtparent] border border-black ">
                 Watch Video
               </button>
             </div>
@@ -86,8 +86,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="p-24 grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
-          <div className="">
+        <div className="md:p-24 p-5 grid grid-cols-1 md:grid-cols-2 gap-8 md:bg-gradient-to-r bg-gradient-to-l from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+          <div className="w-[95%] mx-auto">
             <Swiper className="mySwiper rounded-lg">
               <SwiperSlide>
                 <img

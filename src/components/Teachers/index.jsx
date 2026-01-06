@@ -56,7 +56,7 @@ const Teachers = () => {
       </header>
 
       <section
-        className="md:w-[80%] mx-auto py-[80px] md:flex md:flex-wrap md:gap-5 grid sm:grid-cols-2 grid-cols-1 gap-10 text-center w-[90%]"
+        className="md:w-[80%]  py-[80px] md:flex md:flex-wrap md:gap-5 grid sm:grid-cols-2 grid-cols-1 gap-10 text-center w-[90%] mx-auto"
       >
         {teacher.map((item, index) => {
           return (

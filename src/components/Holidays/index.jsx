@@ -26,17 +26,17 @@ const Holidays = () => {
     <>
       <div
       
-        className="container md:w-[60%] sm:w-[90%] sm:mx-auto w-full py-[2rem]"
+        className="container md:w-[70%] sm:w-[90%] sm:mx-auto mx-auto w-full  py-[2rem]"
       >
         <h1 style={{ textAlign: "center" }}>Your Holiday`s</h1>
 
         <table style={{ width: "100%" }}>
           <thead>
             <tr
+              className="sm:text-[1.2rem] text-[1rem]"
               style={{
                 backgroundColor: "#ddd",
                 textAlign: "center",
-                fontSize: "1.2rem",
                 color: "#000",
               }}
             >
@@ -50,13 +50,9 @@ const Holidays = () => {
             {holidays.map((item, index) => (
               <tr
                 key={index}
-                style={{
-                  textAlign: "center",
-                  fontSize: "1.2rem",
-                  color: "#000",
-                }}
+                className="sm:text-[1.2rem] text-[1rem] text-black text-center"
               >
-                <td style={{borderBottom: '1px solid #ddd',padding:'14px'}}>{index + 1}</td>
+                <td className='' style={{borderBottom: '1px solid #ddd',padding:'14px'}}>{index + 1}</td>
                 <td style={{borderBottom: '1px solid #ddd',padding:'14px'}}>{item.title}</td>
                 <td style={{borderBottom: '1px solid #ddd',padding:'14px'}}>{item.duration}</td>
                 <td style={{borderBottom: '1px solid #ddd',padding:'14px'}}>{item.date}</td>
